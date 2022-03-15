@@ -1,0 +1,61 @@
+nav {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    align-items: stretch;
+}
+
+h1, ul, p {
+    color: white;
+}
+
+div {
+    display: flex;
+    align-items: center;
+}
+
+ul {
+    width: 350px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+}
+
+.search-bar {
+    padding-left: 20px;
+    padding-right: 40px;
+}
+
+.searchIcon {
+    padding: 5px;
+    width: 12px;
+}
+.cartIcon {
+    width: 30px;
+}
+
+.login {
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.login-txt {
+    padding: 0;
+    margin: 0;
+}
+
+.logo {
+    align-items: center;
+    background-color: purple;
+}
+
+.logo-txt {
+    color: white;
+    font-size: 48px;
+    font-weight: 300;
+    padding-left: 12px;
+    padding-right: 12px;
+}

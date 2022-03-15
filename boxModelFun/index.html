@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+
+    <style>
+        body {
+            display: flex;
+            height: 98vh;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .myDiv {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            width: 300px;
+            height: 300px;
+
+            margin: 100px;
+            background-color: aqua;
+            border: solid 5px red ;
+        }
+        .myDiv p {
+            margin: 0;
+            background-color: white;
+            border: solid 6px yellow;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="myDiv">
+        <p>Some text</p>
+        <h3>Some text</h3>
+        <p>Some text</p>
+        <p>Some text</p>
+    </div>
+
+    <p>Some text</p>
+    
+    <div class="myDiv">
+        <p>Some text</p>
+    </div>
+    
+</body>
+</html>

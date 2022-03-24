@@ -87,7 +87,7 @@ let playTournament = (p1,p2,p3,p4,playUntil) => {
     let tournamentWinner = playGame(winnerRound1, winnerRound2, playUntil).name;
     let winningStatement = tournamentWinner + ' is the world champion';
 
-    return winningStatement
+    return winningStatement;
 }
 
 console.log(playTournament(play1, play2, play3, play4, 9));

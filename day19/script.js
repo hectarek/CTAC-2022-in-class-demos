@@ -16,10 +16,10 @@
 // console.log(calculator(subtract, 5, 2));
 // console.log('skldfj');
 
-
 // Higher Order Array Functions
 
 // FILTER
+
 // function evens(num){
 //     return num % 2 == 0;
 //   }
@@ -52,7 +52,7 @@
 
 // const userOlderThan40 = users.find(function(user) {
 //         return user.age > 40;
-//     } 
+//     }
 // );
 
 // console.log(userOlderThan40); // {name: 'Sally Seashell', isActive: false, age: 41}
@@ -79,7 +79,7 @@
 // console.log(returnNameAndAge);
 // console.log(users);
 
-// REDUCE 
+// REDUCE
 
 // const grades = [100,94,88,53,79,93,80,100,77,64,85,87,92];
 
@@ -110,20 +110,99 @@
 //     }
 // }
 
-
-
 // thisIsMyAdminObjectThatHasALongName.consoleName(); //'Erin'
-
 
 // ASYNC JS
 
-// Say "Hello."
-console.log("Hello.");
+// // Say "Hello."
+// console.log("Hello.");
 
-// Say "Goodbye" two seconds from now.
-setTimeout(function() {
-  console.log("Goodbye!");
-}, 2000);
+// // Say "Goodbye" two seconds from now.
+// setTimeout(function() {
+//   console.log("Goodbye!");
+// }, 2000);
 
-// Say "Hello again!"
-console.log("Hello again!");
+// // Say "Hello again!"
+// console.log("Hello again!");
+
+// function saySomething() {
+//   console.log('Hello there');
+// }
+
+// let myBool = true;
+
+// if (myBool) {
+//   console.log('run if true');
+// } else {
+//   console.log('run if false');
+// }
+
+// let arr = ['dog','cat','fish'];
+
+// for (let i=0; i < arr.length; i++) {
+//   console.log(arr[i]);
+// }
+
+// let addFunction = (x, y) => {
+//   return x + y;
+// }
+
+// addFunction(1,4);
+
+// In the following code block, what would be the result in the console:
+
+// let subtractFunction = (x, y) => {
+//   return x - y;
+// }
+
+// console.log(subtractFunction);
+
+// function saySomethingElse() {
+//   console.log(3 > 5);
+// }
+
+// saySomethingElse();
+
+// function sayAnotherThing() {
+//   console.log('What does the fox say?');
+// }
+
+// console.log(sayAnotherThing());
+
+// let multiplicationFunction = (x, y) => {
+//   return x * y;
+// }
+
+// multiplicationFunction(4,5);
+
+// In the following code block, what would be the return value of the function 'sayAnotherThing()'? :
+
+// function truthOrFalsy(myParameter) {
+//   if (myParameter) {
+//     console.log('Truthy');
+//   } else {
+//     console.log('Falsy');
+//   }
+// }
+
+// truthOrFalsy(14);
+
+// In the following code block, what would print out in the console:
+
+// function scopeFunction() {
+//   let myVar = 'apple';
+//   return myVar;
+// }
+
+// scopeFunction();
+// console.log(myVar);
+
+// let myGlobalVar = "";
+
+// function scopeFunction() {
+// 	let myVar = "apple";
+// 	return myVar;
+// }
+
+// myGlobalVar = scopeFunction();
+// console.log(myGlobalVar);

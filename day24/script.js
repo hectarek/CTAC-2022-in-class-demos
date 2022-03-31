@@ -29,18 +29,19 @@
 // myBtn.addEventListener('click', ajaxCall);
 // })(document);
 
-let title = document.getElementById('title-text');
-let body = document.getElementById('body-text');
-let button = document.getElementById('myButton');
+// let title = document.getElementById('title-text');
+// let body = document.getElementById('body-text');
+// let button = document.getElementById('myButton');
 
-button.addEventListener('click', (e) => {
-  fetch("https://jsonplaceholder.typicode.com/posts")
-  .then((response) => response.json())
-	.then((json) => {
-    title.innerHTML = json[0].title;
-    body.innerHTML = json[0].body;
-  });
-})
+// button.addEventListener('click', (e) => {
+//   fetch("https://jsonplaceholder.typicode.com/posts")
+//   .then((response) => response.json())
+// 	.then((json) => {
+//     title.innerHTML = json[0].title;
+//     body.innerHTML = json[0].body;
+//     console.log(json);
+//   });
+// })
 
 
 // fetch("https://jsonplaceholder.typicode.com/posts") // Same but transforms the JSON
@@ -77,35 +78,3 @@ button.addEventListener('click', (e) => {
 // p.then(function(data){
 // 	//console.log(data);
 // })
-
-// //------------ dataService.js ------------
-// function getUserByName(username) {
-//     return new Promise(function(resolve,reject){
-//          $.get('http://jsonplaceholder.typicode.com/users?username=' + username, function(users){
-//              resolve(users[0]);
-//          });
-//      })
-//     }
-
-//     function getPostsByUser(user) {
-//     return new Promise(function(resolve,reject){
-//          $.get('http://jsonplaceholder.typicode.com/posts?userId=' + user.id, function(posts){
-//              resolve(posts);
-//          });
-//     })
-//     }
-
-//     //------------ interface.js ------------
-
-//     function render(posts) {
-//     //render the posts data
-//     console.log(posts);
-//     }
-
-//     function showUserItems(){
-//     getUserByName('Bret')
-//      .then(getPostsByUser)
-//      .then(render);
-//     }
-
-//     showUserItems();

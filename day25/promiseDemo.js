@@ -20,4 +20,4 @@ myPromise
     console.log(error);
 })
 
-// console.log(myPromise);
+console.log(myPromise);

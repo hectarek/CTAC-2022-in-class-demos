@@ -62,21 +62,21 @@
 
 // Add event Listeners
 
-const myButton = document.querySelector('button');
+// const myButton = document.querySelector('button');
 
-const myTextBox = document.getElementById('myInput');
+// const myTextBox = document.getElementById('myInput');
 
-myTextBox.addEventListener('keyup', function(e) {
-    if (e.key == "Enter"){
-        alert('You have submitted the text');
-    }
-});
+// myTextBox.addEventListener('keyup', function(e) {
+//     if (e.key == "Enter"){
+//         alert('You have submitted the text');
+//     }
+// });
 
-document.querySelector('.outer').addEventListener('click', function(e){
-    // e represents the event (element that has been clicked)
-        console.log(e.target, e.currentTarget);
-        //inner, outer
-})
+// document.querySelector('.outer').addEventListener('click', function(e){
+//     // e represents the event (element that has been clicked)
+//         console.log(e.target, e.currentTarget);
+//         //inner, outer
+// })
 
 
 // document.querySelector("#newtodo").addEventListener("keyup", function(e) {
@@ -84,3 +84,7 @@ document.querySelector('.outer').addEventListener('click', function(e){
 //         console.log('Has pressed Enter');
 //     }
 // });
+
+const listItems = document.getElementsByTagName('li');
+
+console.log(listItems);

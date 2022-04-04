@@ -13,15 +13,11 @@
 
 //
 
-// function Car(make, model, year) {
-// 	this.make = make;
-//     this.model = model;
-//     this.year = year;
-//     this.mph = mph;
-// 	this.mph = function() {
-// 		return speed / time;
-// 	}
-// };
+function Car(make, model, year) {
+	this.make = make;
+    this.model = model;
+    this.year = year;
+};
 
 // // let jeep = new Car('Jeep', 'Cherokee', 2019, 70, 2);
 // console.log(new Car);

@@ -1,3 +1,3 @@
-const heading = $('li');
+const listItems = document.getElementsByTagName('li');
 
-console.log(heading);
+console.log(listItems);

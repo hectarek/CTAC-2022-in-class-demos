@@ -11,7 +11,6 @@
 //     // theRest.forEach(p => console.log(p));
 // }
 
-
 // say('a', 'b', 'c', 'd',4,'u',true);
 // say('a', 'b', 'c', 'd',4);
 // say('a', 'b', 'c', 'd',4,5,6,7,8,2,2,'aslfkjsaf',234,25,235,235235);
@@ -31,3 +30,24 @@
 // let hiArray = [ ...hi ]
 
 // console.log(hiArray);
+
+const obj1 = {
+    name: "obj1name",
+    method: function(){
+      return () => {return this.name};
+    }
+  };
+  
+  const arrowFunc1 = obj1.method();
+  
+  console.log(arrowFunc1());
+  
+  const obj2 = {
+    name: "obj2name",
+    method: obj1.method
+  };
+  
+  const arrowFunc2 = obj2.method();
+  
+  console.log(arrowFunc2());
+  

@@ -9,12 +9,12 @@ const myPromise = new Promise((resolve, reject) => {
 
 myPromise
 .then((data) => {
-    console.log(data);
+    // console.log(data);
     data.push('pork chops');
     return data;
 })
 .then((modifiedData) => {
-    console.log(modifiedData);
+    // console.log(modifiedData);
 })
 .catch((error) => {
     console.log(error);

@@ -1,5 +1,5 @@
-const notes = require("./notes");
-const http = require("http");
+let notes = require("./notes");
+let http = require("http");
 
 
 // const app = http.createServer((request, response) => {
@@ -23,12 +23,12 @@ const http = require("http");
 
 // EXPRESS Tutorial
 
-const express = require("express");
-const morgan = require("morgan");
-const app = express();
+let express = require("express");
+let morgan = require("morgan");
+let app = express();
 
-// app.use(express.json());
-app.use(morgan("tiny"));
+app.use(express.json());
+// app.use(morgan("tiny"));
 
 app.get("/", (request, response) => {
 	response.send("<h1>Hello World!</h1>");
@@ -53,12 +53,12 @@ app.get("/api/notes/:id", (request, response) => {
 });
 
 const generateId = () => {
-	const maxId = notes.length > 0 ? Math.max(...notes.map((n) => n.id)) : 0;
+	let maxId = notes.length > 0 ? Math.max(...notes.map((n) => n.id)) : 0;
 	return maxId + 1;
 };
 
 app.post("/api/notes", (request, response) => {
-	const body = request.body;
+	let body = request.body;
 
 	if (!body.content) {
 		return response.status(400).json({
@@ -66,7 +66,7 @@ app.post("/api/notes", (request, response) => {
 		});
 	}
 
-	const note = {
+	let note = {
 		content: body.content,
 		important: body.important || false,
 		date: new Date(),

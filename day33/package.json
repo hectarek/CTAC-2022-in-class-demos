@@ -1,18 +1,32 @@
 {
-  "name": "day33",
+  "name": "ctac-inclassdemos",
   "version": "1.0.0",
   "description": "",
-  "main": "script.js",
-  "directories": {
-    "test": "test"
-  },
+  "main": "index.js",
   "scripts": {
-    "test": "node test/test.js"
+    "test": "jest test/script.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hectarek/CTAC-2022-in-class-demos.git"
   },
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hectarek/CTAC-2022-in-class-demos/issues"
+  },
+  "homepage": "https://github.com/hectarek/CTAC-2022-in-class-demos#readme",
   "devDependencies": {
-    "assert": "^2.0.0",
+    "@babel/preset-env": "^7.16.11",
+    "babel-jest": "^27.5.1",
     "jest": "^27.5.1"
+  },
+  "dependencies": {
+    "moment": "^2.29.2"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.[t|j]sx?$": "babel-jest"
+    }
   }
 }

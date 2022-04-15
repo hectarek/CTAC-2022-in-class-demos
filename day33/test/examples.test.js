@@ -1,18 +1,14 @@
-
-
 // describe("Filter function", () => {
 //   test("it should filter by a search term (link)", () => {
 //     // actual test
 //   });
 // });
 
-
 // describe("JS do Math", () => {
 //   test("two plus two is four", () => {
 //     expect(2 + 2).toBe(4);
 //   });
 // });
-
 
 // test('object assignment', () => {
 //   const data = {one: 1};
@@ -59,19 +55,19 @@
 //   expect(() => compileAndroidCode()).toThrow(/JDK/);
 // });
 
-let user = {
-  name: 'Hector',
-  age: 27,
-  isPremium: false,
-}
+// let user = {
+//     name: 'Hector',
+//     age: 27,
+//     isPremium: false,
+//   }
 
-let account = {
-  amount: 'none',
-  age: 8,
-  type: 'savings',
-}
+//   let account = {
+//     amount: 'none',
+//     age: 8,
+//     type: 'savings',
+//   }
 
-import {someFunction} from '../script';
+//   import {someFunction} from '../script';
 
 // describe('Test user object for various values', () => {
 //   test('tests to see if user name is Hector', () => {
@@ -88,11 +84,11 @@ import {someFunction} from '../script';
 //   });
 // })
 
-describe('Test user object for various values', () => {
-  test('tests to see if user name is Hector', () => {
-    expect(someFunction(3,5)).toBe(8);
-  });
-})
+//   describe('Test user object for various values', () => {
+//     test('tests to see if user name is Hector', () => {
+//       expect(someFunction(3,5)).toBe(8);
+//     });
+//   })
 
 // describe('Test account object for various values', () => {
 //   test('tests to see if user name is Hector', () => {
@@ -108,3 +104,43 @@ describe('Test user object for various values', () => {
 //     expect(user.isPremium).toBeFalsy();
 //   });
 // })
+
+// import { weapons, player1, player2 } from "../scripts/rps";
+
+// describe("Testing player objects from RPS project", () => {
+// 	test("Check to see if player 1 initial score is set to zero", () => {
+// 		expect(player1.score).toBe(0);
+// 	});
+// 	test("Check to see if player 2 initial score is set to zero", () => {
+// 		expect(player2.score).toEqual(0);
+// 	});
+// });
+
+// describe("Testing weapons from RPS project", () => {
+// 	test("Check to see if weapons array has 3 items", () => {
+// 		expect(weapons).toHaveLength(3);
+// 	});
+// });
+
+// describe("Testing playRound from RPS project", () => {
+// 	test("Check to see if weapons array has 3 items", () => {
+// 		expect(playRound(player1, player2)).toBeTruthy();
+// 	});
+// });
+
+// describe("Testing mock rounds to play games", () => {
+//   let mockGetHand;
+
+// 	beforeEach(() => {
+// 		mockGetHand = jest.fn(() => "");
+// 		mockGetHand();
+// 	});
+
+// 	test("Check to see if play round returns an object", () => {
+// 		expect(mockGetHand).toHaveBeenCalled();
+// 	});
+
+// 	test("Check to see if play round returns an object", () => {
+// 		expect(mockGetHand).toHaveReturned();
+// 	});
+// });

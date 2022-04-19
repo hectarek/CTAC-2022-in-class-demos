@@ -10,13 +10,17 @@ const name = 2389576;
 function App() {
 	return (
 		<div className="App">
-			<Heading />
-			<Greeting name="Bob"/>
-			<Form label="My Text" buttonText="Click Me"/>
-			<Footer />
-			{name}
+	
 		</div>
 	);
 }
 
 export default App;
+
+
+useEffect(() => {
+	// code runs when dependencies changed
+	return () => {
+	  // code runs just before dependencies change
+	}
+  }, [dependencies])

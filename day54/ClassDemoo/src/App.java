@@ -4,13 +4,13 @@ import java.util.Scanner;
 public class App {
     public static void main(String[] args) {
 
-        ArrayList list = new ArrayList<>();
+        // ArrayList list = new ArrayList<>();
 
-        String a;
-        byte b;
-        boolean c;
-        double d;
-        int e;
+        // String a;
+        // byte b;
+        // boolean c;
+        // double d;
+        // int e;
 
         // Scanner scan = new Scanner(System.in);
         // ArrayList<TvShow> shows = new ArrayList<>();
